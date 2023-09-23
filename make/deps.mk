@@ -152,3 +152,4 @@ dep_yamerl = git https://github.com/2600hz/erlang-yamerl v0.7.0
 dep_zucchini = git https://github.com/2600hz/erlang-zucchini 0.1.0
 # INI file parser
 # used by kazoo_config_init
+dep_fcm = git https://github.com/softwarejoint/fcm-erlang.git 1.2.1
