@@ -15,12 +15,12 @@ workflows:
       - eunit_tests:
           requires:
             - build_deps
-      #- checks:
-      #    requires:
-      #      - build
-      #- docs:
-      #    requires:
-      #      - build
+      - checks:
+          requires:
+            - build
+      - docs:
+          requires:
+            - build
       - analyze:
           requires:
             - build
@@ -31,8 +31,8 @@ workflows:
           requires:
             - build
             - eunit_tests
-            #- checks
-            #- docs
+            - checks
+            - docs
             - analyze
             - release
 
