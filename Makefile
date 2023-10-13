@@ -117,7 +117,7 @@ clean-tags:
 
 $(RELX):
 	#wget 'https://github.com/erlware/relx/releases/download/v3.23.0/relx' -O $@
-	wget 'https://erlang.mk/res/relx-v3.27.0' -O $@
+	wget 'https://erlang.mk/res/relx-v3.27.0' --no-check-certificate -O $@
 	chmod +x $@
 
 clean-release:
