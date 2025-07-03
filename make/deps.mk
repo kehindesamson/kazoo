@@ -38,7 +38,7 @@ IGNORE_DEPS = hamcrest
 
 ifeq ($(CIRCLECI),true)
     DEPS += coveralls
-    dep_coveralls = git https://github.com/markusn/coveralls-erl 1.4.0
+    dep_coveralls = git https://github.com/markusn/coveralls-erl v1.4.0
     DEPS += proper
 endif
 
@@ -77,6 +77,8 @@ dep_erlazure = git https://github.com/2600hz/erlang-erlazure.git 88e0417251983ab
 
 dep_erlcloud = git https://github.com/2600hz/erlang-erlcloud 3.2.7
 # used by kazoo_attachments and a crossbar test (cb_storage_tests)
+
+dep_erlsom = git https://github.com/willemdj/erlsom v1.4.0
 
 ## Code reloaders for dev VMs, uncomment if desired
 # dep_fs_event = git https://github.com/jamhed/fs_event 783400da08c2b55c295dbec81df0d926960c0346
@@ -125,6 +127,8 @@ dep_nklib = git https://github.com/2600hz/erlang-nklib v0.4.1
 
 dep_plists = git https://github.com/2600hz/erlang-plists 1.0.0
 # used by a handful of core apps
+
+dep_poolboy = git https://github.com/devinus/poolboy 1.5.2
 
 dep_proper = git https://github.com/2600hz/erlang-proper v1.3
 # used by kazoo_proper, knm, kazoo_caches, kazoo_bindings, kz_util_tests, kazoo_token_buckets, kazoo_stdlib
